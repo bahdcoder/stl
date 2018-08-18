@@ -7,6 +7,6 @@ const app = express();
 app.use(parser.json());
 app.use('/api/v1', router);
 
-app.listen(4567);
+app.listen(process.env.PORT || 4567);
 
 export default app;
