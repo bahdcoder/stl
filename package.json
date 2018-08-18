@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel -d dist server/",
     "start:dev": "babel-watch server/index.js",
-    "start": "node dist/server/index.js",
+    "start": "node dist/index.js",
     "test": "nyc --reporter=html --reporter=text mocha server/tests/questions.js --compilers js:babel-core/register --exit --no-deprecation",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "heroku-postbuild": "npm run build"
