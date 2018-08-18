@@ -27,7 +27,7 @@ export default class QuestionsController {
     // return question or a 404
     if (question) {
       return res.json({
-        status: 'success',
+        status: 'fail',
         data: {
           question,
         },
