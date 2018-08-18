@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d dist server/index.js",
+    "build": "babel -d dist server/",
     "start:dev": "babel-watch server/index.js",
     "start": "node dist/server/index.js",
     "test": "nyc --reporter=html --reporter=text mocha server/tests/questions.js --compilers js:babel-core/register --exit --no-deprecation",
